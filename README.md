@@ -47,6 +47,11 @@ Pre-built installer ISOs and OTA system update packages are distributed exclusiv
 - Official Portal: [https://ceroos.cerosphere.my.id/](https://ceroos.cerosphere.my.id/)
 - Bug Reports & Feature Requests: Please use the [Issues](https://github.com/cerosphere/CeroOS/issues) tab.
 
+### Support & Donate for Coffee
+If you find Cero OS useful for your home lab or storage infrastructure, you can support development and server maintenance here:
+- [PayPal (International)](https://paypal.me/wakdou)
+- [SociaBuzz (Indonesia / QRIS / E-Wallet)](https://sociabuzz.com/otatt)
+
 ---
 
 ## License
