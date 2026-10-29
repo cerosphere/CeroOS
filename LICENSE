@@ -1,0 +1,35 @@
+Cero OS Proprietary License
+
+Copyright (c) 2026 Cerosphere. All Rights Reserved.
+
+Permission is hereby granted to any person obtaining a copy of this software
+and associated binary distribution packages ("Cero OS"), to install, run, and
+operate the software on their own computing hardware for personal, internal,
+or organizational purposes, subject to the following conditions:
+
+1. PROPRIETARY RIGHTS & RESTRICTIONS:
+   Cero OS, its architecture, binaries, and accompanying assets are proprietary
+   and confidential to Cerosphere. You may not:
+   a. Decompile, disassemble, reverse engineer, or attempt to derive the source
+      code of Cero OS or any component thereof, except to the extent permitted
+      by applicable mandatory law.
+   b. Modify, rebrand, sublicense, sell, rent, or redistribute modified binary
+      distributions under any other name without prior written authorization
+      from Cerosphere.
+   c. Remove or alter any copyright notices, trademark notices, or proprietary
+      legends contained within the software or documentation.
+
+2. OPEN SOURCE COMPONENTS:
+   Certain third-party libraries and system utilities bundled with Cero OS
+   (including the Linux kernel, ZFS on Linux, and systemd) are licensed under
+   their respective open-source licenses (such as GPL, CDDL, or MIT). Nothing
+   in this license limits your rights under the terms of those licenses.
+
+3. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY:
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+   CEROSPHERE OR ITS CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+   IN THE SOFTWARE.
