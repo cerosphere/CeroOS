@@ -88,10 +88,10 @@ Download the latest bootable ISO image from **[GitHub Releases](https://github.c
 
 ### 3. Flash to USB Installation Media
 
-Use **[Balena Etcher](https://etcher.balena.io/)** or **[Rufus](https://rufus.ie/)** to write the installer to a USB flash drive (8 GB or larger):
+Use **[Balena Etcher](https://etcher.balena.io/)** to write the installer to a USB flash drive (8 GB or larger):
 
 1. Insert your USB flash drive into your workstation.
-2. Launch Balena Etcher or Rufus.
+2. Launch Balena Etcher.
 3. Select the downloaded `cero-installer-v*.iso` image file.
 4. Select the target USB flash drive as the destination.
 5. Click **Flash!** / **Start** and wait for write verification to complete.
