@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#00E5A3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="1000" height="280" rx="14" fill="url(#bg)"/>
+  <rect width="1000" height="280" rx="14" fill="url(#grid)"/>
+  <rect width="1000" height="280" rx="14" fill="url(#glow)"/>
+  <rect width="1000" height="280" rx="14" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.2"/>
+
+  <!-- Top Logo Lockup (Centered) -->
+  <g transform="translate(500, 80)" text-anchor="middle">
+    <!-- Globe Icon -->
+    <g transform="translate(-160, -42) scale(0.52)">
+      <circle cx="80" cy="80" r="64" fill="none" stroke="#818CF8" stroke-width="3" opacity="0.9"/>
+      <ellipse cx="80" cy="80" rx="64" ry="24" fill="none" stroke="#818CF8" stroke-width="2.2" opacity="0.7"/>
+      <ellipse cx="80" cy="80" rx="28" ry="64" fill="none" stroke="#818CF8" stroke-width="2.2" opacity="0.7"/>
+      <line x1="16" y1="80" x2="144" y2="80" stroke="#818CF8" stroke-width="2.2" opacity="0.7"/>
+      <path d="M 20 120 Q 80 20 148 70" fill="none" stroke="#00E5A3" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="148" cy="70" r="7" fill="#00E5A3"/>
+      <circle cx="76" cy="48" r="5" fill="#00E5A3"/>
+      <circle cx="20" cy="120" r="5" fill="#00E5A3"/>
+    </g>
+
+    <!-- Wordmark Title -->
+    <text x="24" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" letter-spacing="-0.03em">
+      Cero<tspan fill="url(#accent)">OS</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="16" font-weight="500" fill="#94A3B8" letter-spacing="0.01em">
+      Self-Hosted Appliance OS for Home Labs &amp; High-Performance Storage
+    </text>
+  </g>
+
+  <!-- Badges Row (Centered) -->
+  <g transform="translate(500, 204)" text-anchor="middle">
+    <g transform="translate(-290, 0)">
+      <!-- Badge 1: ZFS -->
+      <rect x="0" y="0" width="120" height="28" rx="6" fill="rgba(99, 102, 241, 0.12)" stroke="#818CF8" stroke-width="1.2"/>
+      <text x="60" y="18" font-family="'IBM Plex Mono', 'Menlo', monospace" font-size="11" font-weight="600" fill="#C7D2FE">ZFS NATIVE</text>
+
+      <!-- Badge 2: Dual A/B OTA -->
+      <rect x="132" y="0" width="154" height="28" rx="6" fill="rgba(0, 229, 163, 0.1)" stroke="#00E5A3" stroke-width="1.2"/>
+      <text x="209" y="18" font-family="'IBM Plex Mono', 'Menlo', monospace" font-size="11" font-weight="600" fill="#00E5A3">DUAL-SLOT A/B OTA</text>
+
+      <!-- Badge 3: Container Runtime -->
+      <rect x="298" y="0" width="140" height="28" rx="6" fill="rgba(99, 102, 241, 0.12)" stroke="#818CF8" stroke-width="1.2"/>
+      <text x="368" y="18" font-family="'IBM Plex Mono', 'Menlo', monospace" font-size="11" font-weight="600" fill="#C7D2FE">DOCKER &amp; LXC</text>
+
+      <!-- Badge 4: Lightweight -->
+      <rect x="450" y="0" width="130" height="28" rx="6" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.2"/>
+      <text x="515" y="18" font-family="'IBM Plex Mono', 'Menlo', monospace" font-size="11" font-weight="600" fill="#F1F5F9">LIGHTWEIGHT</text>
+    </g>
+  </g>
+</svg>
