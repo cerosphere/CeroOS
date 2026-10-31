@@ -131,6 +131,7 @@ If Cero OS accelerates your workflow or powers your home lab infrastructure, sup
 
 - **Official Website:** [https://ceroos.cerosphere.my.id/](https://ceroos.cerosphere.my.id/)
 - **Bug Reports & Feedback:** Open a ticket on the [Issues](https://github.com/cerosphere/CeroOS/issues) tab.
+- **Telegram:** [https://t.me/cerooschat](https://t.me/cerooschat)
 
 ---
 
