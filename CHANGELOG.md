@@ -1,5 +1,31 @@
 # Changelog
 
+## [v1.0.4] - 2026-11-01
+
+### Added
+- **Permanent Linux Software Bridge (`br0`)**:
+  - Migrated host, guest VMs, and LXC containers to standard Linux software bridge (`br0`) architecture.
+  - Automatic physical NIC enslavement with MAC address cloning, ensuring seamless router/switch compatibility without IP disruption.
+  - Enabled full bidirectional L2 communication between guest VMs and Host NAS, allowing Windows/Linux VMs direct access to host SMB shares (`\\<nas-ip>`) and local services.
+  - Dynamic `cero-bridge.service` boot initialization with automatic `dhcpcd` and `systemd-networkd` migration.
+  - Bridge sysctl netfilter hardening (`net.bridge.bridge-nf-call-iptables = 0`) to prevent Docker firewall rules from dropping guest VM packets.
+- **Virtual Machine noVNC Web Display & Controls**:
+  - Integrated full-featured web console viewer powered by noVNC with automatic binary WebSocket subprotocol negotiation.
+  - Added true 100vw/100vh modal expansion with responsive viewport canvas scaling and hotkey injection (Ctrl+Alt+Del, Windows Key).
+  - Added support for UEFI OVMF firmware boot, Q35 machine type, and SATA bus configurations for modern Windows 10/11 guests.
+- **External USB Storage Management**:
+  - Automated detection and auto-mounting of removable USB drives to `/media`.
+  - Added dedicated "External Drives" section in the Files sidebar with real-time capacity and safe ejection controls.
+- **Defense-in-Depth OS Security Hardening**:
+  - Sudoers privilege restriction for daemon execution, read-only system partition bind mounting, SHA-256 self-healing runtime integrity watchdog, and bytecode obfuscation.
+- **Docker Network Resilience**:
+  - Configured public upstream DNS fallbacks (`1.1.1.1`, `8.8.8.8`) in Docker daemon configuration to ensure uninterrupted image pulls.
+
+### Fixed
+- **VM Network Unicast Packet Dropping**: Enforced deterministic MAC address matching on virtual TAP interfaces to ensure gateway ARP responses reach the guest VM.
+- **UI Reactivity on ISO Ejection**: Exported `lxcRefresh` to global window scope to eliminate toast reference errors and enable reactive media update.
+- **USB Unmount & Auto-Remount Loop**: Resolved eject validation errors and prevented unwanted automatic remounting after explicit user ejection.
+
 ## [v1.0.3] - 2026-11-01
 
 ### Added
