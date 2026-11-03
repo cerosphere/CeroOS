@@ -1,5 +1,26 @@
 # Changelog
 
+## [v1.0.5] - 2026-11-04
+
+### Added
+- **Docker Support Inside Containers (Docker-in-LXC)**:
+  - Containers can now run Docker directly out of the box (Proxmox-compatible nesting) without permission errors or manual setup.
+  - Automatically configured for all new containers and restored backups.
+- **Container Backup & Restore**:
+  - Full backup and restore for LXC containers using standard Proxmox-compatible archives (`vzdump`).
+  - Safely keeps all files, user accounts, and permissions intact.
+
+### Improved & Fixed
+- **Storage Drive Names & Layout**:
+  - Internal storage drives now display their full names clearly without being cut off with dots (`...`).
+  - Name shortening only applies to external USB drives with very long labels.
+  - Aligned the USB icon neatly to the left side of the drive name in the sidebar.
+- **Reliable Large File Uploads**:
+  - Large file uploads in Files now transfer in smooth streams, preventing high memory usage and timeout errors.
+- **Storage & VM Stability**:
+  - Improved drive detection so offline drives do not cause scan errors.
+  - Enforced complete network isolation when virtual machines are set to isolated/no-network mode.
+
 ## [v1.0.4] - 2026-11-01
 
 ### Added
@@ -48,7 +69,7 @@
 - **vCPU Label Grammar**: Corrected static pluralization to dynamically display `1 Core` vs `>1 Cores`.
 - **Power Actions Authentication**: Added `credentials: "same-origin"` to shutdown and reboot API fetch calls to prevent HTTP 401 Unauthorized errors.
 - **Branding & Visual Consistency**: Aligned CLI banner and system accent colors to high-contrast indigo (`#6366F1`) matching the web dashboard theme.
-  
+
 ## [v1.0.2] - 2026-10-31
 
 ### Fixed
