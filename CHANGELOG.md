@@ -9,8 +9,13 @@
 - **Container Backup & Restore**:
   - Full backup and restore for LXC containers using standard Proxmox-compatible archives (`vzdump`).
   - Safely keeps all files, user accounts, and permissions intact.
+- **Accurate Resource Virtualization (LXCFS)**:
+  - Containers now accurately report their assigned CPU cores and RAM limits (e.g. in aaPanel / htop) instead of showing the host's total hardware specs.
 
 ### Improved & Fixed
+- **Automatic Network Setup & DHCP**:
+  - Fixed an issue where fresh installations did not get an IP address automatically via DHCP on the network bridge (`br0`).
+  - Host and bridge networks now connect immediately out of the box on both physical PCs and virtual machines.
 - **Storage Drive Names & Layout**:
   - Internal storage drives now display their full names clearly without being cut off with dots (`...`).
   - Name shortening only applies to external USB drives with very long labels.
