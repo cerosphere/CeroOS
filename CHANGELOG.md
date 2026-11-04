@@ -13,6 +13,9 @@
   - Containers now accurately report their assigned CPU cores and RAM limits (e.g. in aaPanel / htop) instead of showing the host's total hardware specs.
 
 ### Improved & Fixed
+- **Virtual & Containers Sidebar Clarity**:
+  - Fixed an issue where container items in the sidebar showed their IP address instead of their container name.
+  - Container and VM names now display prominently, with full IP address details accessible via hover tooltip.
 - **Automatic Network Setup & DHCP**:
   - Fixed an issue where fresh installations did not get an IP address automatically via DHCP on the network bridge (`br0`).
   - Host and bridge networks now connect immediately out of the box on both physical PCs and virtual machines.
