@@ -1,5 +1,35 @@
 # Changelog
 
+## [v1.0.6] - 2026-11-14
+
+### Added
+- **Global Background File Transfer Manager & Floating Dock**:
+  - Added a floating task manager dock anchored in the bottom-right corner for file uploads, copy, cut, and move operations.
+  - File transfers run persistently in the background across folder changes and view navigation (Dashboard, Storage, Docker, Virtualization, Settings).
+  - Compact floating pill mode showing aggregate transfer speed and completion percentage.
+  - Topbar task counter button with animated spinner and badge showing active transfer count.
+  - Tab unload protection (`beforeunload`) to prevent accidental data loss during active transfers.
+  - Integrated completion and error tracking into the OS notification center.
+- **HDD Standby & Spindown Idle Timer Management**:
+  - Added native hard drive spindown configuration (`hdparm -S`) for mechanical rotational disks.
+  - Real-time disk power state monitoring (`Active / Spinning` vs `Standby (Spun Down)`) in Storage management.
+  - Dedicated timeout presets (10 min to 5 hours, or disabled) with instant sleep testing.
+  - Persistent `cero-spindown.service` unit ensuring drive spindown settings survive system reboots.
+
+### Improved & Fixed
+- **VM Process Isolation & cgroup Decoupling**:
+  - Decoupled QEMU VM lifecycles from the web daemon's systemd cgroup into independent transient scopes (`cero-vm-<name>.scope`).
+  - Virtual machines now remain running without interruption when the Cero OS web service restarts or updates.
+- **System Integrity Watchdog Stability**:
+  - Refined `cero-integrity` monitoring to prevent false-positive service restarts during container and virtual machine initialization.
+- **Real-Time Telemetry & SSE Responsiveness**:
+  - Streamlined Server-Sent Events (SSE) for instant CPU, memory, network, and disk metrics across Dashboard and Settings views.
+  - Lowered cache TTL and eliminated unnecessary DOM thrashing for smoother interface navigation.
+- **Proxmox-Grade Container Telemetry**:
+  - Implemented cgroup v2 delta CPU calculation, aligned memory accounting, and `statvfs` disk monitoring for LXC containers.
+- **Upstream Docker Engine Upgrade**:
+  - Upgraded appliance build configuration to use the latest official upstream Docker CE suite (`docker-ce`, `containerd.io`, `docker-compose-plugin`).
+
 ## [v1.0.5] - 2026-11-04
 
 ### Added
